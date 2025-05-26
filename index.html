@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meme Gallery</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Meme Gallery</h1>
+
+    
+    <div class="controls">
+      <input type="text" id="searchInput" placeholder="Search memes by name..." />
+
+      <select id="filterWidth">
+        <option value="all">All Widths</option>
+        <option value="<300">Less than 300px</option>
+        <option value="300-500">300px - 500px</option>
+        <option value=">500">Greater than 500px</option>
+      </select>
+
+      <select id="sortOption">
+        <option value="name-asc">Name (A–Z)</option>
+        <option value="width-asc">Width (Ascending)</option>
+        <option value="width-desc">Width (Descending)</option>
+      </select>
+    </div>
+
+
+    <div id="loading" class="loading">Loading memes...</div>
+
+
+    <div id="resultCount" class="result-count"></div>
+
+
+    <div id="memeContainer" class="meme-container"></div>
+
+
+    <div id="pagination" class="pagination"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
